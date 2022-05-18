@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<img src="https://i.stack.imgur.com/mDEuy.jpg" usemap="#mapname" 
+    onmousemove="showCoords(event)" onclick="showwhite(event)">
+    <map name="mapname">
+      <area shape="rect" coords="" href="http://www.google.com" alt="TEST">
+    </map>
+</img>
+
+
+<p id="demo"></p>
+
+<script>
+    function showCoords(event) {
+        var x = event.clientX;
+        var y = event.clientY;
+        var coords = "X coords: " + x + ", Y coords: " + y;
+        document.getElementById("demo").innerHTML = coords;
+    }
+
+    function showwhite(event){
+        var x = event.clientX;
+        var y = event.clientY;
+        document.getElementById("demo").style.color = "magenta";
+    }
+</script>
+
+</body>
+</html>
