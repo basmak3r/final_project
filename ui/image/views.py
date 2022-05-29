@@ -19,7 +19,8 @@ def super1(request):
             # print(type())
             c=str(form.files['image'])
             print(c)
-            # out=run([sys.executable,'classify.py' ,'--image1' , 'media/img/'+c],shell=False,stdout=PIPE)
+            out=run([sys.executable,'classify.py' ,'--image1' , 'media/img/'+c],shell=False,stdout=PIPE)
+            print(out)
             # if out==True : 
                 # out=run([sys.executable,'inpaint.py' ,'cordinate' , 'face'+c],shell=False,stdout=PIPE)
             # inpaint=run([sys.executable,'../aot/src/demo.py' ,'--x1' ,'100', '--y1', '200' ,'--x2' ,'300' ,'--y2', '100' ,'--dir_image' , 'media/img/'+c  ,'--pre_train' ,'../aot/experiments/G0000000.pt' , '--painter' ,'bbox'],shell=False,stdout=PIPE)
