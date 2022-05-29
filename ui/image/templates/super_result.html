@@ -12,6 +12,7 @@
 
     
   </head>
+
   <body>
     {% extends "base.html" %}
 
@@ -23,14 +24,15 @@
             {% csrf_token %}
             {{form.as_p}}
             
-            <button type="submit" class="btn btn-lg btn-success">Upload</button>
+            <!-- <button type="submit" class="btn btn-lg btn-success">Upload</button> -->
             </form>
             <hr>
             {% if obj %}
-            
-            <!-- <h3>Succesfully uploaded : {{img_obj.caption}}</h3> -->
+            <h3>Super Resolution Succesfull</h3>
+            <h6>click image to download</h6>
+            <a href="{{ obj.image.url}}" download>
             <img src="{{ obj.image.url}}" height="512px" width="512px" alt="image" class="img-thumbnail" >
-            
+          </a>
             {% endif %}
             
         </div>

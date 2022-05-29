@@ -138,9 +138,9 @@ def demo(args):
                 # cv2.imshow('pred_images', comp_np)
                 # im = Image.fromarray(comp_np)
                 # im.save("a.png")
-                cv2.imwrite("a.png",pred_np)
-                cv2.imwrite("b.png",masked_np)
-                cv2.imwrite("./media/img/1.png",comp_np)
+                # cv2.imwrite("a.png",pred_np)
+                # cv2.imwrite("b.png",masked_np)
+                cv2.imwrite("./media/img/inpaint.png",comp_np)
 
                     # comp_np.save('a.png')
                 print('inpainting finish!')

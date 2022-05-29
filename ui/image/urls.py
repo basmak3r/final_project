@@ -7,8 +7,9 @@ urlpatterns = [
     
     path("",views.index,name="home"),
     # path("/pdf-to-jpg/",views.super,name="super")
-    path("pdf-to-jpg/", views.super1, name='proj'),
-    path("pdf-to-jpg/", views.super2, name='proj'),
+    path("inpaint/", views.inpainting, name='proj'),
+    path("super_resolution/", views.super_res, name='proj'),
+    path("about/", views.about, name='proj'),
 
 
 ]
